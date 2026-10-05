@@ -1,0 +1,280 @@
+/* ============================================================
+   AMR CLINICAL RECOMMENDATION SUPPORT SYSTEM
+   DASHBOARD LAYOUT
+   ============================================================ */
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   MAIN DASHBOARD
+   ============================================================ */
+
+.dashboard {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #f3f6fa;
+
+  overflow-x: hidden;
+}
+
+
+/* ============================================================
+   DASHBOARD BODY
+   ============================================================ */
+
+.dashboard-body {
+  display: flex;
+
+  width: 100%;
+
+  min-height:
+    calc(100vh - 62px);
+
+  background: #f3f6fa;
+}
+
+
+/* ============================================================
+   CONTENT
+   ============================================================ */
+
+.dashboard-content {
+  flex: 1;
+
+  width: calc(100% - 238px);
+
+  min-width: 0;
+
+  min-height:
+    calc(100vh - 62px);
+
+  padding: 24px 28px 34px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f3f6fa 0%,
+      #f7f9fc 100%
+    );
+
+  overflow-x: hidden;
+
+  overflow-y: auto;
+}
+
+
+/* ============================================================
+   WELCOME
+   ============================================================ */
+
+.dashboard-welcome {
+  width: 100%;
+
+  margin-bottom: 22px;
+}
+
+
+/* ============================================================
+   STATISTICS
+   ============================================================ */
+
+.dashboard-stats {
+  width: 100%;
+
+  margin-bottom: 22px;
+}
+
+
+/* ============================================================
+   LOWER GRID
+   ============================================================ */
+
+.dashboard-lower-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 2fr)
+    minmax(330px, 1fr);
+
+  gap: 20px;
+
+  width: 100%;
+
+  align-items: stretch;
+}
+
+
+/* ============================================================
+   ACTIVITY
+   ============================================================ */
+
+.dashboard-activity {
+  min-width: 0;
+
+  width: 100%;
+
+  overflow: hidden;
+}
+
+
+/* ============================================================
+   ANALYTICS
+   ============================================================ */
+
+.dashboard-analytics {
+  min-width: 0;
+
+  width: 100%;
+
+  overflow: hidden;
+}
+
+
+/* ============================================================
+   CARD SAFETY
+   ============================================================ */
+
+.dashboard-content > section {
+  box-sizing: border-box;
+
+  width: 100%;
+}
+
+
+/* ============================================================
+   LARGE DESKTOP
+   ============================================================ */
+
+@media (min-width: 1500px) {
+
+  .dashboard-content {
+    padding:
+      24px
+      38px
+      38px;
+  }
+
+  .dashboard-lower-grid {
+    grid-template-columns:
+      minmax(0, 2.1fr)
+      minmax(380px, 1fr);
+
+    gap: 24px;
+  }
+}
+
+
+/* ============================================================
+   MEDIUM DESKTOP
+   ============================================================ */
+
+@media (max-width: 1200px) {
+
+  .dashboard-content {
+    padding: 22px;
+  }
+
+  .dashboard-lower-grid {
+    grid-template-columns:
+      minmax(0, 1.7fr)
+      minmax(300px, 1fr);
+
+    gap: 18px;
+  }
+}
+
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 1000px) {
+
+  .dashboard-content {
+    width:
+      calc(100% - 210px);
+  }
+
+  .dashboard-lower-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+}
+
+
+/* ============================================================
+   SMALL TABLET
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  .dashboard-body {
+    display: block;
+
+    min-height:
+      calc(100vh - 62px);
+  }
+
+
+  .dashboard-content {
+    width: 100%;
+
+    padding: 18px;
+  }
+
+
+  .dashboard-welcome {
+    margin-bottom: 18px;
+  }
+
+
+  .dashboard-stats {
+    margin-bottom: 18px;
+  }
+
+
+  .dashboard-lower-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+  .dashboard-content {
+    padding: 14px;
+  }
+
+
+  .dashboard-lower-grid {
+    gap: 16px;
+  }
+
+}
+
+
+/* ============================================================
+   VERY SMALL MOBILE
+   ============================================================ */
+
+@media (max-width: 480px) {
+
+  .dashboard-content {
+    padding: 10px;
+  }
+
+}

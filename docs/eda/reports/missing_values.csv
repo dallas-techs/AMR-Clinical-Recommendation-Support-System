@@ -1,0 +1,32 @@
+Column,Missing Values
+subject_id,0
+hadm_id,0
+admittime,0
+dischtime,0
+admission_type,0
+length_of_stay,0
+gender,0
+age,0
+Creatinine,0
+Glucose,0
+Hemoglobin,0
+Platelet Count,0
+Potassium,0
+Sodium,0
+Urea Nitrogen,0
+White Blood Cells,0
+diagnoses,0
+drugs,0
+org_name,0
+antibiotic_results,0
+amr_label,0
+age_group,0
+los_category,0
+diagnosis_count,0
+drug_count,0
+culture_available,0
+resistance_present,0
+organism_count,0
+antibiotic_test_count,0
+broad_spectrum_used,0
+prior_antibiotic_exposure,0

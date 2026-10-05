@@ -1,0 +1,75 @@
+AMR DATASET SUMMARY
+==================================================
+
+Rows : 275
+Columns : 31
+
+Data Types
+subject_id                     int64
+hadm_id                        int64
+admittime                     object
+dischtime                     object
+admission_type                object
+length_of_stay                 int64
+gender                        object
+age                            int64
+Creatinine                   float64
+Glucose                      float64
+Hemoglobin                   float64
+Platelet Count               float64
+Potassium                    float64
+Sodium                       float64
+Urea Nitrogen                float64
+White Blood Cells            float64
+diagnoses                     object
+drugs                         object
+org_name                      object
+antibiotic_results            object
+amr_label                      int64
+age_group                     object
+los_category                  object
+diagnosis_count                int64
+drug_count                     int64
+culture_available              int64
+resistance_present             int64
+organism_count                 int64
+antibiotic_test_count          int64
+broad_spectrum_used            int64
+prior_antibiotic_exposure      int64
+dtype: object
+
+Missing Values
+subject_id                   0
+hadm_id                      0
+admittime                    0
+dischtime                    0
+admission_type               0
+length_of_stay               0
+gender                       0
+age                          0
+Creatinine                   0
+Glucose                      0
+Hemoglobin                   0
+Platelet Count               0
+Potassium                    0
+Sodium                       0
+Urea Nitrogen                0
+White Blood Cells            0
+diagnoses                    0
+drugs                        0
+org_name                     0
+antibiotic_results           0
+amr_label                    0
+age_group                    0
+los_category                 0
+diagnosis_count              0
+drug_count                   0
+culture_available            0
+resistance_present           0
+organism_count               0
+antibiotic_test_count        0
+broad_spectrum_used          0
+prior_antibiotic_exposure    0
+dtype: int64
+
+Duplicate Rows : 0

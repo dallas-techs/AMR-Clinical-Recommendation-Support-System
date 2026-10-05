@@ -1,0 +1,531 @@
+/* =========================================================
+   CLINICAL REPORT - EXACT REFERENCE UI
+   ========================================================= */
+
+.report-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f3f7fb;
+}
+
+.report-body {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 62px);
+  background: linear-gradient(180deg, #f1f6fb 0%, #f8fbfe 100%);
+}
+
+.report-content {
+  flex: 1;
+  width: calc(100% - 238px);
+  min-width: 0;
+  min-height: calc(100vh - 62px);
+  padding: 28px 36px 50px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.report-content-inner {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   PAGE HERO
+   ========================================================= */
+
+.report-hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.report-hero-icon {
+  width: 80px;
+  height: 80px;
+  flex: 0 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: linear-gradient(135deg, #1686e8 0%, #218fe7 100%);
+  box-shadow: 0 7px 18px rgba(20, 111, 201, 0.18);
+}
+
+.report-hero-icon svg {
+  color: #ffffff;
+  font-size: 48px;
+}
+
+.report-page-title {
+  margin: 0 !important;
+  color: #09285b !important;
+  font-size: 43px !important;
+  line-height: 1.08 !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.7px !important;
+}
+
+.report-page-subtitle {
+  margin-top: 7px !important;
+  color: #536b89 !important;
+  font-size: 17px !important;
+  line-height: 1.4 !important;
+  font-weight: 500 !important;
+}
+
+/* =========================================================
+   MAIN CARD
+   ========================================================= */
+
+.report-card {
+  width: 100%;
+  padding: 28px !important;
+  box-sizing: border-box;
+  background: #ffffff !important;
+  border: 1px solid #d6e1ed !important;
+  border-radius: 11px !important;
+  box-shadow: 0 6px 18px rgba(25, 55, 90, 0.10) !important;
+}
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.report-section-header {
+  width: 100%;
+  min-height: 66px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 0 16px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 9px;
+  background: linear-gradient(90deg, #e0edfb 0%, #d8e9fa 100%);
+}
+
+.report-section-icon {
+  width: 60px;
+  height: 60px;
+  flex: 0 0 60px;
+  margin-left: -9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #1474d4 0%, #218ce4 100%);
+  box-shadow: 0 4px 10px rgba(17, 104, 194, 0.18);
+}
+
+.report-section-icon svg {
+  color: #ffffff;
+  font-size: 34px;
+}
+
+.report-section-title {
+  color: #09285b !important;
+  font-size: 24px !important;
+  line-height: 1.2 !important;
+  font-weight: 800 !important;
+}
+
+.report-card-subtitle {
+  margin: 0 4px 25px !important;
+  color: #536b89 !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+}
+
+.report-divider {
+  margin: 0 4px 22px !important;
+  border-color: #cbd8e7 !important;
+}
+
+/* =========================================================
+   PATIENT FIELD
+   ========================================================= */
+
+.report-field {
+  width: 100%;
+  margin-bottom: 20px !important;
+}
+
+.report-field .MuiOutlinedInput-root {
+  min-height: 62px;
+  border-radius: 6px !important;
+  background: #ffffff !important;
+}
+
+.report-field .MuiOutlinedInput-notchedOutline {
+  border: 1.5px solid #9fb4cb !important;
+}
+
+.report-field .MuiOutlinedInput-root:hover
+.MuiOutlinedInput-notchedOutline {
+  border-color: #7694b3 !important;
+}
+
+.report-field .MuiOutlinedInput-root.Mui-focused
+.MuiOutlinedInput-notchedOutline {
+  border-color: #1769c2 !important;
+  border-width: 2px !important;
+}
+
+.report-field .MuiInputLabel-root {
+  color: #173457 !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+
+.report-field .MuiInputLabel-root.Mui-focused {
+  color: #1769c2 !important;
+}
+
+.report-field .MuiInputBase-input {
+  color: #314b69 !important;
+  font-size: 17px !important;
+  font-weight: 500 !important;
+}
+
+.report-field .MuiSelect-select {
+  color: #6b819b !important;
+  font-size: 17px !important;
+  font-weight: 500 !important;
+}
+
+.report-field .MuiSelect-icon {
+  color: #607994 !important;
+  right: 10px;
+}
+
+/* =========================================================
+   LOADING / ERROR
+   ========================================================= */
+
+.report-loading {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #526a86;
+}
+
+.report-loading .MuiCircularProgress-root {
+  color: #1769c2 !important;
+}
+
+.report-error {
+  margin-bottom: 20px !important;
+}
+
+/* =========================================================
+   SELECTED PATIENT
+   ========================================================= */
+
+.selected-patient-card {
+  padding: 17px 19px !important;
+  margin-bottom: 22px !important;
+  border: 1px solid #cbd9e8 !important;
+  border-radius: 8px !important;
+  background: #f5f9fd !important;
+}
+
+.selected-patient-label {
+  color: #657c96 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+.selected-patient-name {
+  margin-top: 4px !important;
+  color: #09285b !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+}
+
+.selected-patient-meta {
+  margin-top: 5px !important;
+  color: #536b89 !important;
+  font-size: 13px !important;
+}
+
+/* =========================================================
+   DOCTOR VERIFICATION
+   ========================================================= */
+
+.verification-card {
+  padding: 22px !important;
+  margin-top: 6px !important;
+  margin-bottom: 24px !important;
+  border: 1px solid #d2dfeb !important;
+  border-radius: 9px !important;
+  background: #ffffff !important;
+}
+
+.verification-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.verification-header svg {
+  color: #1769c2;
+  font-size: 28px;
+}
+
+.verification-header .MuiTypography-root {
+  color: #09285b;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.verification-description {
+  margin-bottom: 20px !important;
+  color: #536b89 !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+}
+
+.report-notes-field {
+  margin-bottom: 17px !important;
+}
+
+.verification-button-row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.verify-button {
+  min-height: 47px !important;
+  padding: 0 26px !important;
+  border-radius: 6px !important;
+  background: #071a46 !important;
+  color: #ffffff !important;
+  text-transform: none !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+}
+
+.verify-button:hover {
+  background: #0d2d67 !important;
+}
+
+/* =========================================================
+   VERIFIED CARD
+   ========================================================= */
+
+.verified-card {
+  padding: 20px !important;
+  border-radius: 8px !important;
+  border: 1px solid #a9d8b0 !important;
+  background: #f5fff7 !important;
+}
+
+.verified-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.verified-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.verified-title-wrap svg {
+  color: #2e7d32;
+}
+
+.verified-title-wrap .MuiTypography-root {
+  color: #2e7d32;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.verified-card > .MuiTypography-root {
+  margin-bottom: 7px;
+  color: #344d68;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   GENERATE BUTTON
+   ========================================================= */
+
+.report-generate-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.generate-pdf-button {
+  min-width: 340px !important;
+  height: 58px !important;
+  padding: 0 27px !important;
+  border-radius: 6px !important;
+  background: linear-gradient(135deg, #071a46 0%, #0a235b 100%) !important;
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  box-shadow: 0 5px 13px rgba(5, 25, 67, 0.22) !important;
+}
+
+.generate-pdf-button:hover {
+  background: linear-gradient(135deg, #0a235b 0%, #0d2d6e 100%) !important;
+}
+
+.generate-pdf-button.Mui-disabled {
+  background: #d4d9df !important;
+  color: #8d98a5 !important;
+  box-shadow: none !important;
+}
+
+.generate-pdf-button .MuiButton-startIcon {
+  margin-right: 11px;
+}
+
+.generate-pdf-button .MuiButton-startIcon svg {
+  font-size: 25px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 1500px) {
+  .report-content {
+    padding: 32px 42px 55px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .report-content {
+    padding: 24px 28px 45px;
+  }
+
+  .report-page-title {
+    font-size: 37px !important;
+  }
+
+  .report-hero-icon {
+    width: 70px;
+    height: 70px;
+    flex-basis: 70px;
+  }
+
+  .report-hero-icon svg {
+    font-size: 43px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .report-content {
+    width: calc(100% - 210px);
+  }
+
+  .generate-pdf-button {
+    min-width: 300px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .report-body {
+    display: block;
+  }
+
+  .report-content {
+    width: 100%;
+    padding: 20px 16px 35px;
+  }
+
+  .report-hero {
+    gap: 14px;
+  }
+
+  .report-hero-icon {
+    width: 62px;
+    height: 62px;
+    flex-basis: 62px;
+  }
+
+  .report-hero-icon svg {
+    font-size: 37px;
+  }
+
+  .report-page-title {
+    font-size: 30px !important;
+  }
+
+  .report-page-subtitle {
+    font-size: 14px !important;
+  }
+
+  .report-card {
+    padding: 16px !important;
+  }
+
+  .report-section-header {
+    min-height: 54px;
+  }
+
+  .report-section-icon {
+    width: 50px;
+    height: 50px;
+    flex-basis: 50px;
+  }
+
+  .report-section-icon svg {
+    font-size: 28px;
+  }
+
+  .report-section-title {
+    font-size: 19px !important;
+  }
+
+  .report-generate-row {
+    justify-content: stretch;
+  }
+
+  .generate-pdf-button {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .report-content {
+    padding: 14px 10px 30px;
+  }
+
+  .report-page-title {
+    font-size: 25px !important;
+  }
+
+  .report-page-subtitle {
+    font-size: 12px !important;
+  }
+
+  .report-field .MuiOutlinedInput-root {
+    min-height: 54px;
+  }
+
+  .report-field .MuiInputBase-input,
+  .report-field .MuiSelect-select {
+    font-size: 14px !important;
+  }
+
+  .generate-pdf-button {
+    height: 54px !important;
+    font-size: 13px !important;
+  }
+}

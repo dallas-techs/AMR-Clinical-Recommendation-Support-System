@@ -1,0 +1,370 @@
+/* =========================================================
+   CLINICAL RECORDS — PROFESSIONAL HOSPITAL UI
+   ========================================================= */
+
+.clinical-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f3f6fa;
+}
+
+.clinical-body {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 62px);
+  background: #f3f6fa;
+}
+
+.clinical-content {
+  flex: 1;
+  width: calc(100% - 238px);
+  min-width: 0;
+  min-height: calc(100vh - 62px);
+  padding: 28px 32px 44px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #f2f6fb 0%, #f8fafc 100%);
+}
+
+.clinical-content-inner {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   PAGE HEADER
+   ========================================================= */
+
+.clinical-page-header {
+  margin-bottom: 22px;
+}
+
+.clinical-title-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.clinical-title-icon {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2f80ed 0%, #1967d2 100%);
+  box-shadow: 0 7px 16px rgba(31, 91, 180, 0.18);
+}
+
+.clinical-title-icon svg {
+  font-size: 28px;
+}
+
+.clinical-page-title {
+  color: #092452 !important;
+  font-size: clamp(30px, 3vw, 42px) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.6px;
+}
+
+.clinical-page-subtitle {
+  margin-top: 6px !important;
+  color: #526b8d !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: 1.35 !important;
+}
+
+/* =========================================================
+   MAIN FORM CARD
+   ========================================================= */
+
+.clinical-form-card {
+  width: 100%;
+  padding: 15px 14px 22px !important;
+  border-radius: 20px !important;
+  background: rgba(255, 255, 255, 0.94) !important;
+  border: 1px solid #dbe4ef !important;
+  box-shadow: 0 8px 25px rgba(15, 45, 85, 0.10) !important;
+  box-sizing: border-box;
+}
+
+.clinical-form-card > .MuiGrid-root {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* =========================================================
+   BLUE SECTION HEADERS
+   ========================================================= */
+
+.clinical-section-header {
+  width: 100%;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+  padding: 7px 14px;
+  box-sizing: border-box;
+  border-radius: 9px;
+  color: #092452;
+  background: linear-gradient(90deg, #e8f1ff 0%, #e4edf9 100%);
+}
+
+.clinical-section-header-spaced {
+  margin-top: 13px;
+  margin-bottom: 15px;
+}
+
+.clinical-section-header .MuiTypography-root {
+  color: #092452;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.clinical-section-icon {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #287de1 0%, #1559b4 100%);
+  box-shadow: 0 5px 12px rgba(30, 95, 180, 0.18);
+}
+
+.clinical-section-icon svg {
+  font-size: 23px;
+}
+
+.clinical-section-description {
+  margin: -4px 2px 12px !important;
+  color: #5a7191 !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  line-height: 1.45 !important;
+}
+
+/* =========================================================
+   INPUT FIELDS
+   ========================================================= */
+
+.clinical-form-card .MuiFormControl-root {
+  margin-top: 7px;
+}
+
+.clinical-form-card .MuiInputLabel-root {
+  color: #0c2a55 !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  background: #ffffff;
+  padding: 0 5px;
+}
+
+.clinical-form-card .MuiInputLabel-root.Mui-focused {
+  color: #0c2a55 !important;
+}
+
+.clinical-form-card .MuiOutlinedInput-root {
+  min-height: 54px;
+  border-radius: 8px;
+  background: #fbfcfe;
+  color: #2b405e;
+  font-size: 16px;
+}
+
+.clinical-form-card .MuiOutlinedInput-notchedOutline {
+  border: 1.6px solid #aebdd0;
+}
+
+.clinical-form-card .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #7990ad;
+}
+
+.clinical-form-card .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: 2px solid #2b67b1;
+}
+
+.clinical-form-card .MuiOutlinedInput-input {
+  padding: 14px 16px;
+}
+
+.clinical-form-card .MuiSelect-select {
+  padding: 14px 16px !important;
+  display: flex;
+  align-items: center;
+}
+
+.clinical-form-card textarea.MuiOutlinedInput-input {
+  min-height: 66px;
+}
+
+.clinical-form-card .MuiFormHelperText-root {
+  margin: 5px 8px 0 !important;
+  color: #607794 !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 1.35 !important;
+}
+
+.clinical-form-card .MuiGrid-root {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   SAVE BUTTON
+   ========================================================= */
+
+.clinical-form-card .MuiButton-contained {
+  min-height: 46px;
+  border-radius: 9px;
+  padding: 9px 25px;
+  text-transform: none;
+  font-size: 15px;
+  font-weight: 700;
+  background: #092452 !important;
+  box-shadow: 0 7px 15px rgba(9, 36, 82, 0.18);
+}
+
+.clinical-form-card .MuiButton-contained:hover {
+  background: #12376f !important;
+}
+
+/* =========================================================
+   SAVED RECORDS
+   ========================================================= */
+
+.saved-records-title {
+  color: #092452 !important;
+  font-size: 25px !important;
+}
+
+/* Keep the existing clinical record table visually consistent. */
+.clinical-content .MuiPaper-root:not(.clinical-form-card) {
+  border-radius: 14px;
+}
+
+/* =========================================================
+   DIALOGS
+   ========================================================= */
+
+.MuiDialog-paper {
+  border-radius: 16px !important;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 1500px) {
+  .clinical-content {
+    padding: 30px 40px 48px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .clinical-content {
+    padding: 24px 24px 40px;
+  }
+
+  .clinical-section-header .MuiTypography-root {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .clinical-content {
+    width: calc(100% - 210px);
+  }
+
+  .clinical-page-title {
+    font-size: 32px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .clinical-body {
+    display: block;
+  }
+
+  .clinical-content {
+    width: 100%;
+    padding: 18px 16px 34px;
+  }
+
+  .clinical-title-row {
+    align-items: flex-start;
+  }
+
+  .clinical-title-icon {
+    width: 44px;
+    height: 44px;
+    flex-basis: 44px;
+  }
+
+  .clinical-page-title {
+    font-size: 28px !important;
+  }
+
+  .clinical-page-subtitle {
+    font-size: 15px !important;
+  }
+
+  .clinical-section-header {
+    min-height: 48px;
+    padding: 6px 10px;
+  }
+
+  .clinical-section-header .MuiTypography-root {
+    font-size: 19px;
+  }
+
+  .clinical-section-icon {
+    width: 34px;
+    height: 34px;
+    flex-basis: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clinical-content {
+    padding: 14px 10px 28px;
+  }
+
+  .clinical-title-row {
+    gap: 10px;
+  }
+
+  .clinical-title-icon {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+  }
+
+  .clinical-title-icon svg {
+    font-size: 23px;
+  }
+
+  .clinical-page-title {
+    font-size: 24px !important;
+  }
+
+  .clinical-page-subtitle {
+    font-size: 14px !important;
+  }
+
+  .clinical-form-card {
+    padding: 10px 8px 18px !important;
+    border-radius: 15px !important;
+  }
+
+  .clinical-section-header .MuiTypography-root {
+    font-size: 17px;
+  }
+}

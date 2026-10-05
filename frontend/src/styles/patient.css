@@ -1,0 +1,571 @@
+/* =========================================================
+   AMR PATIENT MANAGEMENT
+   Reference-style professional healthcare UI
+   ========================================================= */
+
+.patient-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f3f6fa;
+}
+
+.patient-body {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 62px);
+  background: linear-gradient(180deg, #f3f6fa 0%, #f8fafd 100%);
+}
+
+.patient-content {
+  flex: 1;
+  width: calc(100% - 238px);
+  min-width: 0;
+  min-height: calc(100vh - 62px);
+  padding: 24px 28px 40px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.patient-content-inner {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   PAGE HEADER
+   ========================================================= */
+
+.patient-page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 22px;
+}
+
+.patient-title-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.patient-title-icon {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: linear-gradient(135deg, #3286e8 0%, #1265c8 100%);
+  box-shadow: 0 7px 16px rgba(30, 103, 193, 0.22);
+}
+
+.patient-title-icon svg {
+  color: #ffffff;
+  font-size: 34px;
+}
+
+.patient-page-title {
+  color: #0a2c59 !important;
+  font-size: 34px !important;
+  font-weight: 800 !important;
+  line-height: 1.12 !important;
+  letter-spacing: -0.5px !important;
+}
+
+.patient-page-subtitle {
+  margin-top: 5px !important;
+  color: #58708e !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+.patient-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 10px;
+}
+
+.patient-search {
+  width: 310px;
+}
+
+.patient-search .MuiOutlinedInput-root {
+  height: 54px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.patient-search .MuiOutlinedInput-notchedOutline {
+  border-color: #b9c7d8 !important;
+  border-width: 1.5px !important;
+}
+
+.patient-search .MuiInputBase-input {
+  color: #263e5a !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+
+.patient-search .MuiInputAdornment-root svg {
+  color: #64809f;
+  font-size: 25px;
+}
+
+.patient-add-button {
+  height: 54px !important;
+  min-width: 145px !important;
+  padding: 0 20px !important;
+  border-radius: 5px !important;
+  background: #071a46 !important;
+  color: #ffffff !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 10px rgba(7, 26, 70, 0.20) !important;
+}
+
+.patient-add-button:hover {
+  background: #0d2d67 !important;
+}
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.patient-table-card {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #d4dfec !important;
+  border-radius: 10px !important;
+  background: #ffffff !important;
+  box-shadow: 0 6px 20px rgba(15, 42, 74, 0.10) !important;
+}
+
+.patient-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.patient-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.patient-table thead th {
+  height: 58px;
+  padding: 0 18px;
+  text-align: left;
+  white-space: nowrap;
+  background: #07143d;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  border: 0;
+}
+
+.patient-table thead th:first-child {
+  border-top-left-radius: 7px;
+}
+
+.patient-table thead th:last-child {
+  border-top-right-radius: 7px;
+}
+
+.patient-table tbody td {
+  height: 68px;
+  padding: 0 18px;
+  border-bottom: 1px solid #d9e1ea;
+  color: #243b55;
+  font-size: 14px;
+  font-weight: 500;
+  background: #ffffff;
+}
+
+.patient-table tbody tr:hover td {
+  background: #f5f9fe;
+}
+
+.patient-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.patient-id-cell {
+  color: #102f58 !important;
+  font-weight: 700 !important;
+}
+
+.patient-name-cell {
+  color: #152f50 !important;
+  font-weight: 600 !important;
+}
+
+.patient-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.patient-actions .MuiIconButton-root {
+  width: 34px;
+  height: 34px;
+  border-radius: 7px;
+}
+
+.patient-action-view {
+  color: #1976d2 !important;
+}
+
+.patient-action-view:hover {
+  background: rgba(25, 118, 210, 0.10) !important;
+}
+
+.patient-action-edit {
+  color: #ef7d00 !important;
+}
+
+.patient-action-edit:hover {
+  background: rgba(239, 125, 0, 0.10) !important;
+}
+
+.patient-action-delete {
+  color: #dc3030 !important;
+}
+
+.patient-action-delete:hover {
+  background: rgba(220, 48, 48, 0.10) !important;
+}
+
+.patient-loading-cell,
+.patient-empty-cell {
+  height: 180px !important;
+  text-align: center !important;
+  color: #60758f !important;
+}
+
+.patient-loading-cell {
+  display: table-cell;
+}
+
+.patient-loading-cell span {
+  margin-left: 12px;
+  vertical-align: 5px;
+}
+
+.patient-table-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 62px;
+  padding: 0 20px;
+  border-top: 1px solid #dce4ed;
+  color: #536c88;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   DIALOGS
+   ========================================================= */
+
+.patient-dialog .MuiDialog-paper {
+  margin: 20px;
+  overflow: hidden;
+  border: 1px solid #c3d1e1;
+  border-radius: 13px !important;
+  background: #ffffff;
+  box-shadow: 0 18px 50px rgba(13, 43, 76, 0.20);
+}
+
+.patient-dialog-title {
+  min-height: 76px;
+  padding: 14px 20px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dbe4ee;
+  background: #ffffff;
+}
+
+.patient-dialog-title-content {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.patient-dialog-title-content > .MuiTypography-root {
+  color: #0a2c59 !important;
+  font-size: 21px !important;
+  font-weight: 800 !important;
+}
+
+.patient-dialog-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #3286e8 0%, #1265c8 100%);
+}
+
+.patient-dialog-icon svg {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.patient-dialog-close {
+  color: #29476b !important;
+}
+
+.patient-dialog-content {
+  padding: 20px !important;
+  background: #f8fafd;
+}
+
+.patient-dialog-section {
+  margin-bottom: 16px;
+  padding: 0 14px 16px;
+  border: 1px solid #d7e1ec;
+  border-radius: 9px;
+  background: #ffffff;
+}
+
+.patient-dialog-section:last-child {
+  margin-bottom: 0;
+}
+
+.patient-dialog-section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 43px;
+  margin: 0 0 15px;
+  padding: 0 12px;
+  border-radius: 7px;
+  background: linear-gradient(90deg, #e5effb 0%, #dceaf9 100%);
+}
+
+.patient-dialog-section-title svg {
+  color: #1769c2;
+  font-size: 22px;
+}
+
+.patient-dialog-section-title .MuiTypography-root {
+  color: #0a2c59 !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+}
+
+.patient-dialog-section .MuiTextField-root {
+  margin-top: 0;
+}
+
+.patient-dialog-section .MuiInputLabel-root {
+  color: #29425f !important;
+  font-weight: 600 !important;
+}
+
+.patient-dialog-section .MuiOutlinedInput-root {
+  min-height: 49px;
+  border-radius: 6px !important;
+  background: #ffffff;
+}
+
+.patient-dialog-section .MuiOutlinedInput-notchedOutline {
+  border-color: #afbed0 !important;
+  border-width: 1.5px !important;
+}
+
+.patient-dialog-section .MuiOutlinedInput-root:hover
+.MuiOutlinedInput-notchedOutline {
+  border-color: #6f88a4 !important;
+}
+
+.patient-dialog-section .MuiOutlinedInput-root.Mui-focused
+.MuiOutlinedInput-notchedOutline {
+  border-color: #1769c2 !important;
+  border-width: 2px !important;
+}
+
+.patient-dialog-section .MuiInputBase-input {
+  color: #253b55 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.patient-dialog-section .MuiInputAdornment-root svg {
+  color: #557796;
+}
+
+.patient-dialog-actions {
+  min-height: 72px;
+  padding: 12px 20px !important;
+  gap: 10px;
+  border-top: 1px solid #dbe4ee;
+  background: #ffffff;
+}
+
+.patient-cancel-button {
+  min-width: 110px !important;
+  height: 44px !important;
+  border: 1px solid #b8c7d8 !important;
+  border-radius: 5px !important;
+  color: #29476b !important;
+  font-weight: 800 !important;
+  background: #f2f6fb !important;
+}
+
+.patient-save-button {
+  min-width: 145px !important;
+  height: 44px !important;
+  border-radius: 5px !important;
+  background: #071a46 !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 9px rgba(7, 26, 70, 0.18) !important;
+}
+
+.patient-save-button:hover {
+  background: #0d2d67 !important;
+}
+
+/* =========================================================
+   VIEW PATIENT DETAIL BOXES
+   ========================================================= */
+
+.patient-detail-box {
+  min-height: 63px;
+  padding: 10px 12px;
+  border: 1px solid #e0e8f1;
+  border-radius: 7px;
+  background: linear-gradient(135deg, #f8fbff 0%, #eef4fb 100%);
+  box-sizing: border-box;
+}
+
+.patient-detail-box span {
+  display: block;
+  margin-bottom: 5px;
+  color: #35516f;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.patient-detail-box strong {
+  display: block;
+  color: #0e2f59;
+  font-size: 14px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 1500px) {
+  .patient-content {
+    padding: 28px 38px 45px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .patient-content {
+    padding: 24px;
+  }
+
+  .patient-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .patient-search {
+    width: 260px;
+  }
+}
+
+@media (max-width: 900px) {
+  .patient-page-header {
+    flex-direction: column;
+  }
+
+  .patient-toolbar {
+    width: 100%;
+  }
+
+  .patient-search {
+    flex: 1;
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .patient-body {
+    display: block;
+  }
+
+  .patient-content {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .patient-title-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .patient-page-title {
+    font-size: 28px !important;
+  }
+
+  .patient-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .patient-search {
+    width: 100%;
+  }
+
+  .patient-add-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .patient-content {
+    padding: 12px;
+  }
+
+  .patient-title-group {
+    gap: 10px;
+  }
+
+  .patient-page-title {
+    font-size: 24px !important;
+  }
+
+  .patient-page-subtitle {
+    font-size: 13px !important;
+  }
+
+  .patient-dialog .MuiDialog-paper {
+    margin: 8px;
+  }
+
+  .patient-dialog-content {
+    padding: 12px !important;
+  }
+
+  .patient-dialog-actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .patient-cancel-button,
+  .patient-save-button {
+    width: 100% !important;
+  }
+}

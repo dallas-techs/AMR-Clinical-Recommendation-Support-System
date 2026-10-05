@@ -1,0 +1,371 @@
+/* =========================================================
+   PREDICTION PAGE — REFERENCE UI
+   ========================================================= */
+
+.prediction-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f3f6fa;
+}
+
+.prediction-body {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 62px);
+  background: linear-gradient(180deg, #f2f6fa 0%, #f7fafd 100%);
+}
+
+.prediction-content {
+  flex: 1;
+  width: calc(100% - 238px);
+  min-width: 0;
+  min-height: calc(100vh - 62px);
+  padding: 14px 26px 38px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.prediction-content-inner {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* ---------------- HEADER ---------------- */
+
+.prediction-title-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 18px 0;
+}
+
+.prediction-title-icon {
+  width: 70px;
+  height: 70px;
+  flex: 0 0 70px;
+  border-radius: 11px;
+  background: linear-gradient(145deg, #2387ed 0%, #0864c7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  box-shadow: 0 6px 14px rgba(19, 103, 195, .18);
+}
+
+.prediction-title-icon span {
+  width: 7px;
+  border-radius: 2px 2px 1px 1px;
+  background: #fff;
+  display: block;
+}
+
+.prediction-title-icon span:nth-child(1) { height: 20px; }
+.prediction-title-icon span:nth-child(2) { height: 32px; }
+.prediction-title-icon span:nth-child(3) { height: 25px; }
+
+.prediction-page-title {
+  margin: 0 !important;
+  color: #0a2b58 !important;
+  font-size: 31px !important;
+  font-weight: 800 !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.35px !important;
+}
+
+.prediction-page-subtitle {
+  margin: 5px 0 0 !important;
+  color: #506b8c !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+}
+
+/* ---------------- MAIN FORM CARD ---------------- */
+
+.prediction-main-card {
+  width: 100%;
+  padding: 20px !important;
+  box-sizing: border-box;
+  background: rgba(255,255,255,.98) !important;
+  border: 1px solid #d5e0ec !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 16px rgba(19, 48, 82, .10) !important;
+}
+
+/* ---------------- SECTION BARS ---------------- */
+
+.prediction-section-title,
+.prediction-subsection-title {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  color: #0b2d5b !important;
+  background: linear-gradient(90deg, #e5f0fc 0%, #dceafa 100%) !important;
+  border-radius: 7px !important;
+  box-sizing: border-box;
+  font-weight: 800 !important;
+}
+
+.prediction-section-title {
+  min-height: 45px;
+  padding: 0 12px !important;
+  margin-bottom: 18px !important;
+  font-size: 18px !important;
+}
+
+.prediction-subsection-title {
+  min-height: 45px;
+  padding: 0 12px !important;
+  margin-top: 14px !important;
+  margin-bottom: 14px !important;
+  font-size: 18px !important;
+}
+
+.prediction-section-icon {
+  width: 31px;
+  height: 31px;
+  min-width: 31px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(145deg, #2588eb 0%, #0864c7 100%);
+  font-size: 13px;
+  font-weight: 900;
+  box-shadow: 0 2px 5px rgba(15, 93, 175, .18);
+}
+
+.prediction-person-icon {
+  font-size: 16px;
+  position: relative;
+}
+
+.prediction-person-icon::after {
+  content: "";
+  width: 13px;
+  height: 6px;
+  position: absolute;
+  bottom: 6px;
+  left: 9px;
+  border-radius: 8px 8px 3px 3px;
+  background: #fff;
+}
+
+.prediction-person-icon {
+  color: transparent;
+}
+
+.prediction-lab-icon {
+  font-size: 15px;
+  transform: rotate(180deg);
+}
+
+.prediction-engineered-icon {
+  font-size: 17px;
+}
+
+/* ---------------- GRID / INPUTS ---------------- */
+
+.prediction-main-card .MuiTextField-root {
+  width: 100%;
+}
+
+.prediction-main-card .MuiOutlinedInput-root {
+  min-height: 43px;
+  border-radius: 5px !important;
+  background: #fff !important;
+}
+
+.prediction-main-card .MuiOutlinedInput-notchedOutline {
+  border-color: #a9b9cd !important;
+  border-width: 1.3px !important;
+}
+
+.prediction-main-card .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #7d93ad !important;
+}
+
+.prediction-main-card .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #1769c2 !important;
+  border-width: 2px !important;
+}
+
+.prediction-main-card .MuiInputLabel-root {
+  color: #15385f !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+.prediction-main-card .MuiInputBase-input {
+  color: #29415f !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+
+.prediction-main-card .MuiSelect-icon {
+  color: #536b85 !important;
+}
+
+.prediction-main-card .MuiFormHelperText-root {
+  margin-left: 4px !important;
+  margin-top: 4px !important;
+  color: #607894 !important;
+  font-size: 9px !important;
+  line-height: 1.2 !important;
+  font-weight: 500 !important;
+}
+
+.prediction-main-card .MuiTypography-body2 {
+  color: #536b85 !important;
+  font-size: 12px !important;
+  line-height: 1.45 !important;
+}
+
+/* ---------------- ENGINEERED VALUES ---------------- */
+
+.prediction-main-card .MuiGrid-item .MuiTextField-root input[readonly] {
+  background: #f5f8fc;
+}
+
+/* ---------------- PREDICT BUTTON ---------------- */
+
+.prediction-button-wrap {
+  width: 100%;
+}
+
+.prediction-primary-button {
+  width: 100% !important;
+  min-height: 46px !important;
+  border-radius: 5px !important;
+  background: #061944 !important;
+  color: #fff !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  letter-spacing: .2px !important;
+  box-shadow: 0 4px 10px rgba(3, 20, 58, .20) !important;
+}
+
+.prediction-primary-button:hover {
+  background: #0b2b68 !important;
+}
+
+/* ---------------- RESULT / SHAP ---------------- */
+
+.prediction-result-card {
+  margin-top: 22px !important;
+  padding: 20px !important;
+  background: #fff !important;
+  border: 1px solid #d5e0ec !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 16px rgba(19,48,82,.10) !important;
+}
+
+.prediction-result-card > .MuiTypography-root:first-child {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 12px;
+  margin-bottom: 18px !important;
+  border-radius: 7px;
+  background: linear-gradient(90deg,#e5f0fc 0%,#dceafa 100%);
+  color: #0b2d5b !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+}
+
+.prediction-page .MuiPaper-root:not(.prediction-main-card):not(.prediction-result-card) {
+  border: 1px solid #d5e0ec;
+  border-radius: 9px !important;
+  box-shadow: 0 4px 16px rgba(19,48,82,.09) !important;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (min-width: 1500px) {
+  .prediction-content {
+    padding: 16px 38px 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .prediction-content {
+    padding: 18px 24px 36px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .prediction-content {
+    width: calc(100% - 210px);
+  }
+
+  .prediction-title-icon {
+    width: 60px;
+    height: 60px;
+    flex-basis: 60px;
+  }
+
+  .prediction-page-title {
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .prediction-body {
+    display: block;
+  }
+
+  .prediction-content {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .prediction-title-row {
+    gap: 12px;
+  }
+
+  .prediction-title-icon {
+    width: 54px;
+    height: 54px;
+    flex-basis: 54px;
+  }
+
+  .prediction-page-title {
+    font-size: 25px !important;
+  }
+
+  .prediction-main-card,
+  .prediction-result-card {
+    padding: 14px !important;
+  }
+
+  .prediction-section-title,
+  .prediction-subsection-title {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .prediction-content {
+    padding: 12px;
+  }
+
+  .prediction-title-row {
+    align-items: flex-start;
+  }
+
+  .prediction-title-icon {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+  }
+
+  .prediction-page-title {
+    font-size: 22px !important;
+  }
+
+  .prediction-page-subtitle {
+    font-size: 11px !important;
+  }
+}

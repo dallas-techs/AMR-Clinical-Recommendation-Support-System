@@ -1,0 +1,24 @@
+itemid,label,fluid,category
+50811,Hemoglobin,Blood,Blood Gas
+50809,Glucose,Blood,Blood Gas
+50833,Potassium,Other Body Fluid,Blood Gas
+51755,White Blood Cells,Blood,Chemistry
+51756,White Blood Cells,Blood,Chemistry
+50983,Sodium,Blood,Chemistry
+51640,Hemoglobin,Blood,Chemistry
+52610,Potassium,Blood,Chemistry
+51704,Platelet Count,Blood,Chemistry
+52623,Sodium,Blood,Chemistry
+50931,Glucose,Blood,Chemistry
+52569,Glucose,Blood,Chemistry
+52647,Urea Nitrogen,Blood,Chemistry
+50971,Potassium,Blood,Chemistry
+50912,Creatinine,Blood,Chemistry
+51006,Urea Nitrogen,Blood,Chemistry
+52546,Creatinine,Blood,Chemistry
+50889,C-Reactive Protein,Blood,Chemistry
+51981,Glucose,Urine,Chemistry
+51222,Hemoglobin,Blood,Hematology
+51265,Platelet Count,Blood,Hematology
+51301,White Blood Cells,Blood,Hematology
+51478,Glucose,Urine,Hematology

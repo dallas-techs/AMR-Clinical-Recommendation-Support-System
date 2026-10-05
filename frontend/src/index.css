@@ -1,0 +1,58 @@
+/* Google Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Root Colors */
+:root {
+  --primary: #0B3C6D;
+  --secondary: #8B6B2E;
+  --background: #F5F7FA;
+  --white: #FFFFFF;
+  --success: #2E7D32;
+  --danger: #C62828;
+  --text: #1F2937;
+  --border: #D1D5DB;
+}
+
+/* Body */
+body {
+  background: var(--background);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+}
+
+/* Inputs */
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--text);
+}

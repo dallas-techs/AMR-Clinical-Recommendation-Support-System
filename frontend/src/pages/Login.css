@@ -1,0 +1,1098 @@
+/* ============================================================
+   AMR LOGIN PAGE
+   FINAL STATIC HOSPITAL DESIGN
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   ROOT
+   ============================================================ */
+
+:root {
+  --login-card-width: 450px;
+  --login-card-height: 600px;
+}
+
+
+/* ============================================================
+   MAIN PAGE
+   ============================================================ */
+
+.login-page {
+  position: relative;
+
+  width: 100vw;
+  height: 100vh;
+
+  min-height: 650px;
+
+  overflow: hidden;
+
+  font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  background: #edf3f7;
+}
+
+
+/* ============================================================
+   HOSPITAL BACKGROUND
+   ============================================================ */
+
+.login-background {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  z-index: 1;
+}
+
+
+/* ============================================================
+   VERY LIGHT OVERLAY
+   ============================================================ */
+
+.login-page::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.04),
+      rgba(255, 255, 255, 0.00) 50%,
+      rgba(0, 0, 0, 0.03)
+    );
+
+  pointer-events: none;
+
+  z-index: 2;
+}
+
+
+/* ============================================================
+   LEFT BRAND SECTION
+   ============================================================ */
+
+.brand-section {
+  position: absolute;
+
+  left: 3.5%;
+  top: 50%;
+
+  width: 330px;
+
+  transform:
+    translateY(-50%);
+
+  z-index: 10;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* ============================================================
+   KARUNYA LOGO
+   ============================================================ */
+
+.karunya-logo {
+  width: 300px;
+
+  max-width: 100%;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(
+      0 10px 18px
+      rgba(0, 0, 0, 0.20)
+    );
+}
+
+
+/* ============================================================
+   LEFT BRAND TEXT
+   ============================================================ */
+
+.brand-title {
+  margin-top: 12px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  line-height: 1.25;
+
+  font-weight: 600;
+
+  text-shadow:
+    0 3px 10px
+    rgba(0, 0, 0, 0.55);
+}
+
+
+.brand-title strong {
+  color: #ffd45f;
+
+  font-size: 23px;
+
+  font-weight: 800;
+}
+
+
+/* ============================================================
+   CENTER LOGIN WRAPPER
+   ============================================================ */
+
+.login-wrapper {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: var(--login-card-width);
+
+  transform:
+    translate(-50%, -50%);
+
+  z-index: 20;
+}
+
+
+/* ============================================================
+   LOGIN CARD
+   ============================================================ */
+
+.login-card {
+  width: 100%;
+
+  padding:
+    25px 43px 24px;
+
+  border-radius: 24px;
+
+  background:
+    rgba(255, 255, 255, 0.97);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.95);
+
+  box-shadow:
+    0 25px 60px
+    rgba(0, 0, 0, 0.22),
+
+    0 8px 25px
+    rgba(0, 0, 0, 0.12);
+
+  backdrop-filter:
+    blur(8px);
+}
+
+
+/* ============================================================
+   LOGO INSIDE LOGIN CARD
+   ============================================================ */
+
+.card-logo {
+  display: block;
+
+  width: 165px;
+
+  height: 105px;
+
+  margin:
+    0 auto 2px;
+
+  object-fit: contain;
+}
+
+
+/* ============================================================
+   LOGIN TITLE
+   ============================================================ */
+
+.login-card h1 {
+  margin: 0;
+
+  text-align: center;
+
+  color:
+    #0b3d70;
+
+  font-size:
+    29px;
+
+  line-height:
+    1.2;
+
+  font-weight:
+    800;
+}
+
+
+/* ============================================================
+   SUBTITLE
+   ============================================================ */
+
+.login-subtitle {
+  margin:
+    7px 0 25px;
+
+  text-align:
+    center;
+
+  color:
+    #6e8198;
+
+  font-size:
+    13px;
+}
+
+
+/* ============================================================
+   FIELD
+   ============================================================ */
+
+.field {
+  margin-bottom:
+    16px;
+}
+
+
+.field label {
+  display:
+    block;
+
+  margin-bottom:
+    6px;
+
+  color:
+    #173b60;
+
+  font-size:
+    13px;
+
+  font-weight:
+    700;
+}
+
+
+/* ============================================================
+   INPUT
+   ============================================================ */
+
+.field input {
+  width:
+    100%;
+
+  height:
+    51px;
+
+  padding:
+    0 16px;
+
+  border:
+    1px solid
+    #d3dce6;
+
+  border-radius:
+    10px;
+
+  outline:
+    none;
+
+  background:
+    #ffffff;
+
+  color:
+    #193d61;
+
+  font-size:
+    14px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.field input::placeholder {
+  color:
+    #9aaabd;
+}
+
+
+.field input:focus {
+  border-color:
+    #1478d1;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(20, 120, 209, 0.10);
+}
+
+
+/* ============================================================
+   LOGIN BUTTON
+   ============================================================ */
+
+.login-button {
+  width:
+    100%;
+
+  height:
+    53px;
+
+  margin-top:
+    3px;
+
+  border:
+    none;
+
+  border-radius:
+    10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #0b4385,
+      #0787e8
+    );
+
+  color:
+    #ffffff;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    17px;
+
+  font-size:
+    16px;
+
+  font-weight:
+    800;
+
+  cursor:
+    pointer;
+
+  box-shadow:
+    0 12px 25px
+    rgba(7, 101, 190, 0.28);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.login-button:hover {
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 15px 30px
+    rgba(7, 101, 190, 0.35);
+}
+
+
+.login-button:active {
+  transform:
+    translateY(0);
+}
+
+
+.button-arrow {
+  font-size:
+    22px;
+
+  line-height:
+    1;
+}
+
+
+/* ============================================================
+   REGISTER SWITCH
+   ============================================================ */
+
+.register-switch {
+  display:
+    flex;
+
+  justify-content:
+    center;
+
+  align-items:
+    center;
+
+  gap:
+    5px;
+
+  margin-top:
+    18px;
+
+  color:
+    #71839a;
+
+  font-size:
+    12px;
+}
+
+
+.register-switch button {
+  border:
+    none;
+
+  padding:
+    0;
+
+  background:
+    transparent;
+
+  color:
+    #064d91;
+
+  font-size:
+    12px;
+
+  font-weight:
+    800;
+
+  cursor:
+    pointer;
+}
+
+
+.register-switch button:hover {
+  text-decoration:
+    underline;
+}
+
+
+/* ============================================================
+   SECURE ACCESS
+   ============================================================ */
+
+.secure-access {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    7px;
+
+  margin-top:
+    18px;
+
+  padding-top:
+    13px;
+
+  border-top:
+    1px solid
+    #e2e7ed;
+
+  color:
+    #7d8c9e;
+
+  font-size:
+    10px;
+}
+
+
+/* ============================================================
+   RIGHT SIDE DOCTOR
+   ============================================================
+
+   IMPORTANT:
+
+   Doctor height is controlled ONLY by:
+   --login-card-height
+
+   Login.jsx measures the actual login-card height
+   using ResizeObserver.
+
+   Therefore:
+
+   Login Card Height
+          ↓
+   --login-card-height
+          ↓
+   Doctor Height
+
+   This remains synchronized when:
+   - Browser is resized
+   - Login/Register mode changes
+   - Card content height changes
+   ============================================================ */
+/* ============================================================
+   DOCTOR - LARGER THAN LOGIN CARD
+   ============================================================ */
+/* ============================================================
+   RIGHT SIDE DOCTOR
+   EXACT SAME HEIGHT AS LOGIN CARD
+   ============================================================ */
+.doctor-section {
+  position: absolute;
+
+  left:
+    calc(
+      50% +
+      calc(var(--login-card-width) / 2) +
+      8px
+    );
+
+  top: 50%;
+
+  /* EXACT LOGIN CARD HEIGHT */
+  height: var(--login-card-height);
+
+  width: 28vw;
+
+  max-width: 430px;
+  min-width: 250px;
+
+  /*
+     IMPORTANT:
+     Move the whole doctor container LEFT.
+     Y position remains centered.
+  */
+  transform:
+    translate(-130px, -50%);
+
+  z-index: 15;
+
+  display: flex;
+
+  align-items: stretch;
+  justify-content: flex-start;
+
+  pointer-events: none;
+}
+
+
+/* ============================================================
+   REAL DOCTOR
+   ============================================================ */
+
+.real-doctor {
+  display:
+    block;
+
+  /*
+     EXACTLY SAME HEIGHT AS LOGIN CARD
+  */
+  height:
+    100%;
+
+  width:
+    auto;
+
+  /*
+     Don't allow artificial enlargement
+  */
+  max-width:
+    none;
+
+  object-fit:
+    contain;
+
+  object-position:
+    center bottom;
+
+  /*
+     IMPORTANT:
+     No scale.
+     Otherwise doctor becomes larger than card.
+  */
+  transform:
+    none;
+
+  transform-origin:
+    center bottom;
+
+  user-select:
+    none;
+
+  pointer-events:
+    none;
+
+  filter:
+    drop-shadow(
+      0 18px 22px
+      rgba(0, 0, 0, 0.22)
+    );
+}
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.login-footer {
+  position:
+    absolute;
+
+  left:
+    50%;
+
+  bottom:
+    10px;
+
+  transform:
+    translateX(-50%);
+
+  z-index:
+    30;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    8px;
+
+  white-space:
+    nowrap;
+
+  color:
+    rgba(255, 255, 255, 0.82);
+
+  font-size:
+    10px;
+
+  text-shadow:
+    0 2px 6px
+    rgba(0, 0, 0, 0.45);
+}
+
+
+.login-footer b {
+  color:
+    #ffd05c;
+}
+
+
+/* ============================================================
+   LARGE SCREEN
+   ============================================================ */
+
+@media (min-width: 1500px) {
+
+  :root {
+    --login-card-width: 470px;
+  }
+
+
+  .brand-section {
+    left:
+      4%;
+  }
+
+
+  .karunya-logo {
+    width:
+      330px;
+  }
+
+
+  .login-wrapper {
+    width:
+      var(--login-card-width);
+  }
+
+
+  .doctor-section {
+    /*
+       Automatically uses:
+       470 / 2 = 235px
+       + 18px gap
+    */
+
+    left:
+      calc(
+        50% +
+        calc(var(--login-card-width) / 2) +
+        18px
+      );
+
+    width:
+      33vw;
+
+    max-width:
+      500px;
+
+    /*
+       DO NOT add height here.
+       It must inherit login-card height.
+    */
+  }
+}
+
+
+/* ============================================================
+   LAPTOP
+   ============================================================ */
+
+@media (max-width: 1200px) {
+
+  :root {
+    --login-card-width: 410px;
+  }
+
+
+  .brand-section {
+    left:
+      2%;
+
+    width:
+      270px;
+  }
+
+
+  .karunya-logo {
+    width:
+      255px;
+  }
+
+
+  .brand-title {
+    font-size:
+      16px;
+  }
+
+
+  .brand-title strong {
+    font-size:
+      18px;
+  }
+
+
+  .login-wrapper {
+    width:
+      var(--login-card-width);
+  }
+
+
+  .login-card {
+    padding:
+      23px 36px;
+  }
+
+
+  .doctor-section {
+    left:
+      calc(
+        50% +
+        calc(var(--login-card-width) / 2) +
+        14px
+      );
+
+    width:
+      29vw;
+
+    min-width:
+      270px;
+
+    /*
+       NO height override.
+    */
+  }
+}
+
+
+/* ============================================================
+   SMALL LAPTOP
+   ============================================================ */
+
+@media (max-width: 1000px) {
+
+  :root {
+    --login-card-width: 390px;
+  }
+
+
+  .brand-section {
+    left:
+      1%;
+
+    width:
+      220px;
+  }
+
+
+  .karunya-logo {
+    width:
+      210px;
+  }
+
+
+  .brand-title {
+    display:
+      none;
+  }
+
+
+  .login-wrapper {
+    width:
+      var(--login-card-width);
+  }
+
+
+  .doctor-section {
+    left:
+      calc(
+        50% +
+        calc(var(--login-card-width) / 2) +
+        10px
+      );
+
+    width:
+      27vw;
+
+    min-width:
+      240px;
+
+    /*
+       NO fixed height.
+    */
+  }
+}
+
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 800px) {
+
+  .login-background {
+    background-position:
+      center center;
+  }
+
+
+  .brand-section {
+    top:
+      10%;
+
+    left:
+      50%;
+
+    transform:
+      translateX(-50%);
+
+    width:
+      190px;
+  }
+
+
+  .karunya-logo {
+    width:
+      175px;
+  }
+
+
+  .login-wrapper {
+    top:
+      55%;
+
+    width:
+      min(390px, 82vw);
+  }
+
+
+  /*
+     On tablet we still keep doctor synchronized
+     with the card height.
+  */
+
+  .doctor-section {
+    left:
+      auto;
+
+    right:
+      -5%;
+
+    width:
+      250px;
+
+    min-width:
+      0;
+
+    /*
+       IMPORTANT:
+       Removed old 45vh height.
+    */
+  }
+
+
+  .login-footer {
+    display:
+      none;
+  }
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+  .login-page {
+    min-height:
+      700px;
+  }
+
+
+  .login-background {
+    background-position:
+      center center;
+  }
+
+
+  .brand-section {
+    top:
+      5%;
+
+    width:
+      150px;
+  }
+
+
+  .karunya-logo {
+    width:
+      145px;
+  }
+
+
+  .login-wrapper {
+    top:
+      54%;
+
+    width:
+      calc(100vw - 30px);
+  }
+
+
+  .login-card {
+    padding:
+      22px 22px;
+  }
+
+
+  .card-logo {
+    width:
+      130px;
+
+    height:
+      78px;
+  }
+
+
+  .login-card h1 {
+    font-size:
+      24px;
+  }
+
+
+  .doctor-section {
+    /*
+       Keep doctor tied to login card height.
+    */
+
+    left:
+      auto;
+
+    right:
+      -12%;
+
+    width:
+      190px;
+
+    min-width:
+      0;
+
+    /*
+       NO height: 38vh;
+    */
+  }
+}
+
+
+/* ============================================================
+   VERY SMALL DEVICES
+   ============================================================ */
+
+@media (max-width: 400px) {
+
+  .login-wrapper {
+    top:
+      55%;
+  }
+
+
+  /*
+     Keep doctor hidden only on extremely narrow
+     mobile screens because there is physically
+     no room for card + doctor side-by-side.
+  */
+
+  .doctor-section {
+    display:
+      none;
+  }
+
+
+  .brand-section {
+    top:
+      4%;
+  }
+}
