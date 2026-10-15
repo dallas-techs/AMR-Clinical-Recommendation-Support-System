@@ -1,5 +1,6 @@
 from sqlalchemy.orm import Session
 from fastapi import HTTPException
+from sqlalchemy import text
 
 from app.models.patient import Patient
 from app.models.patient_counter import PatientCounter
@@ -134,11 +135,12 @@ def update_patient(
     return patient
 
 
+
+
 def delete_patient(
     db: Session,
     patient_id: int
 ):
-
     patient = (
         db.query(Patient)
         .filter(Patient.id == patient_id)
@@ -148,8 +150,59 @@ def delete_patient(
     if not patient:
         return None
 
-    db.delete(patient)
+    try:
+        # 1. Delete doctor verifications linked to this patient
+        #    and to the patient's predictions.
+        db.execute(
+            text("""
+                DELETE FROM public.doctor_verifications
+                WHERE patient_id = :patient_id
+                   OR prediction_id IN (
+                       SELECT id
+                       FROM public.predictions
+                       WHERE patient_id = :patient_id
+                   )
+            """),
+            {"patient_id": patient_id}
+        )
 
-    db.commit()
+        # 2. Delete recommendations for the patient's predictions.
+        db.execute(
+            text("""
+                DELETE FROM public.recommendations
+                WHERE prediction_id IN (
+                    SELECT id
+                    FROM public.predictions
+                    WHERE patient_id = :patient_id
+                )
+            """),
+            {"patient_id": patient_id}
+        )
 
-    return patient
+        # 3. Delete clinical records.
+        db.execute(
+            text("""
+                DELETE FROM public.clinical_records
+                WHERE patient_id = :patient_id
+            """),
+            {"patient_id": patient_id}
+        )
+
+        # 4. Delete predictions.
+        db.execute(
+            text("""
+                DELETE FROM public.predictions
+                WHERE patient_id = :patient_id
+            """),
+            {"patient_id": patient_id}
+        )
+
+        # 5. Delete the patient last.
+        db.delete(patient)
+        db.commit()
+
+        return patient
+
+    except Exception:
+        db.rollback()
+        raise
